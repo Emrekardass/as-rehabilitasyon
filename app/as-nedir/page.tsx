@@ -1,8 +1,32 @@
+import FlipCard from '@/components/FlipCard';
+
 export default function AsNedir() {
   return (
     <div className="min-h-screen bg-slate-50">
+      {/* FAQ Flip Cards */}
+      <section className="px-6 pt-16 pb-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <FlipCard 
+            frontText="Ankilozan Spondilit nedir?" 
+            backText="HLA-B27 genine bağlı olarak gelişen kronik inflamatuvar romatizmal hastalıktır." 
+          />
+          <FlipCard 
+            frontText="Tanısı için kanda hangi değerlere bakılır?" 
+            backText="Kanda CRP ve ESR yükselir, HLA-B27 pozitif çıkar." 
+          />
+          <FlipCard 
+            frontText="Tanı için altın standart nedir?" 
+            backText="Röntgende bilateral sakroiliak eklem iltihabı gözlenir." 
+          />
+          <FlipCard 
+            frontText="Ankilozan Spondilit görüntüsü nasıldır?" 
+            backText="Bambu kamışı görünüm." 
+          />
+        </div>
+      </section>
+
       {/* Clinical Definition */}
-      <section className="px-6 py-16 max-w-5xl mx-auto mb-8">
+      <section className="px-6 py-8 max-w-5xl mx-auto mb-8">
         <div className="bg-white rounded-lg shadow-md p-8 border-t-4 border-red-600">
           <h2 className="text-2xl font-bold text-slate-900 mb-4">📖 Tıbbi Tanımı</h2>
           <p className="text-slate-700 leading-relaxed mb-4">
